@@ -1,7 +1,7 @@
 .topDiv {
     background-image: url(./assets/gradient-violet-bg.jpeg);
-    background-size: 100%;
-    background-position: 0px -206px;
+    background-size: cover;
+    background-position: 0px -200px;
     margin-top: -10px;
     margin-left: -10px;
     margin-right: -10px;
