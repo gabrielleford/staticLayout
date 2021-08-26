@@ -1,0 +1,30 @@
+.topDiv {
+    background-image: url(./assets/gradient-violet-bg.jpeg);
+    background-size: 100%;
+    background-position: 0px -206px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 1000px;
+}
+
+.headerDiv {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.topHeader {
+    position: fixed;
+    z-index: 1;
+}
+
+#kastLogo {
+    width: 198px;
+    position: relative;
+    top: 1.32em;
+    left: 0.8em;
+}
+
+#kastLogo:hover {
+    width: ;
+}
