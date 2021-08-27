@@ -9,11 +9,13 @@
 }
 
 .headerDiv {
+    width: 100%;
     position: relative;
     top: 0;
     left: 0;
 }
 .topHeader {
+    width: 100%;
     position: fixed;
     z-index: 1;
 }
@@ -27,4 +29,61 @@
 
 #kastLogo:hover {
     width: ;
+}
+
+nav {
+    margin-right: 10px;
+    position: relative;
+    float: right;
+    top: 1.7em;
+    right: 10em;
+}
+
+.dropdown {
+    display: none;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 5px;
+    margin-right: 32px;
+}
+
+#dropdown1:checked + label > p {
+    visibility: hidden;
+}
+
+#premium {
+    background: none;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 5px;
+}
+
+#openKast {
+    background: none;
+    border: solid thin white;
+    border-radius: 3px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-left: 50px;
+    position: fixed;
+    transition: padding .3s ease-in-out;
+}
+
+#openKast:hover {
+    padding-left: 5.5px;
+    padding-right: 5.5px;
+    padding-top: 5.5px;
+    padding-bottom: 5.5px;
 }
