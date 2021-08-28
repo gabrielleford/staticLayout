@@ -1,7 +1,8 @@
 .topDiv {
     background-image: url(./assets/gradient-violet-bg.jpeg);
-    background-size: cover;
-    background-position: 0px -200px;
+    background-size: 100%;
+    background-position: 0px -180px;
+    background-repeat: no-repeat;
     margin-top: -40px;
     margin-left: -10px;
     margin-right: -10px;
@@ -23,9 +24,9 @@
 
 #kastLogo {
     width: 198px;
-    position: relative;
-    top: 3.2em;
-    left: 0.8em;
+    position: fixed;
+    top: 1.2em;
+    left: 1.4em;
 }
 
 /* #kastLogo:hover {
@@ -58,8 +59,9 @@ nav {
     margin-right: 32px;
 }
 
-.button:hover {
-    cursor: pointer;
+.fa-external-link-square-alt {
+    color: #8d9eac;
+    font-size: 14px;
 }
 
 #dropdown1:checked ~ #aboutLinks {
@@ -93,26 +95,115 @@ nav {
     text-decoration: underline;
 }
 
-.fa-external-link-square-alt {
-    color: #8d9eac;
-    font-size: 14px;
-}
-
 #blogArrow {
     position: absolute;
     left: 4.5em;
-    bottom: 4.05em;
+    bottom: 4.2em;
 }
 
 #pressArrow {
     position: absolute;
     right: 1.5em;
-    bottom: 1.7em;
+    bottom: 1.8em;
+}
+
+#dropdown2:checked ~ #helpLinks {
+    visibility: visible;
+}
+
+#helpLinks {
+    background-color: white;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    padding: 17px 22px 17px 22px;
+    border-radius: 3px;
+    position: absolute;
+    top: 3.5em;
+    right: 10em;
+    visibility: hidden;
+}
+
+#helpLinks > a {
+    text-decoration: none;
+    color: #777784;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#helpLinks > a:hover {
+    color: #222222;
+    text-decoration: underline;
+}
+
+#contSupArrow {
+    position: absolute;
+    top: 1.9em;
+    right: 1em;
+}
+
+#faqArrow {
+    position: absolute;
+    top: 4.3em;
+    left: 5em;
+}
+
+#dropdown3:checked ~ #communityLinks {
+    visibility: visible;
+}
+
+#communityLinks {
+    background-color: white;
+    width: 161px;
+    display: flex;
+    flex-direction: column;
+    padding: 17px 22px 17px 22px;
+    border-radius: 3px;
+    position: absolute;
+    top: 3.5em;
+    right: 2em;
+    visibility: hidden;
+}
+
+#communityLinks > a {
+    text-decoration: none;
+    color: #777784;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#communityLinks > a:hover {
+    color: #222222;
+    text-decoration: underline;
+}
+
+.offClick {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    padding: 5px;
+    margin-right: 32px;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+input:checked + label{
+    display: none;
+}
+
+input:not(:checked) + label + label {
+    display: none;
 }
 
 #premium {
-    background: none;
-    border: none;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 16px;
@@ -120,24 +211,39 @@ nav {
     padding: 5px;
 }
 
-#openKast {
-    background: none;
-    border: solid thin white;
-    border-radius: 3px;
-    padding: 5px;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    font-size: 13px;
-    font-weight: 900;
-    letter-spacing: 2px;
-    margin-left: 60px;
-    position: fixed;
-    transition: padding .3s ease-in-out;
+#premium:hover {
+    text-decoration: underline;
 }
 
-#openKast:hover {
-    padding-left: 5.5px;
-    padding-right: 5.5px;
-    padding-top: 5.5px;
-    padding-bottom: 5.5px;
+#openKast {
+    background: none;
+    border: none;
+    border-radius: 2px;
+    padding: 3.5px 5px 3.5px 5px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin-left: 55px;
+    position: fixed;
+    z-index: 1;
+    top: 1.95em;
+}
+
+#buttonBorder {
+    width: 98px;
+    height: 23px;
+    border: solid thin white;
+    border-radius: 3px;
+    position: absolute;
+    top: 1.1em;
+    right: -9.55em;
+    transition: all 300ms ease;
+}
+
+#openKast:hover + #buttonBorder {
+    transform: scale(1.035, 1.085);
 }

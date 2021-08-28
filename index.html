@@ -15,11 +15,13 @@
     <body>
         <div class="headerDiv">
             <header class="topHeader">
-                <img id="kastLogo" src="./assets/kastLogo.png" alt="Kast Logo">
+                <a href="https://www.google.com" target="blank"><img id="kastLogo" src="./assets/kastLogo.png" alt="Kast Logo"></a>
                 <nav>
                     <div class="navDiv">
-                        <input type="checkbox" class="dropdown" id="dropdown1">
+                        <input type="radio" class="dropdown" name="nav" id="blank" checked>
+                        <input type="radio" class="dropdown" id="dropdown1" name="nav">
                         <label for="dropdown1"><p class="button">About &nbsp;<i class="fas fa-chevron-down" style="font-size: 12px;"></i></p></label>
+                        <label for="blank"><p class="offClick" id="aboutOffClick">About &nbsp;<i class="fas fa-chevron-down" style="font-size: 12px;"></i></p></label>
                         <div id="aboutLinks">
                             <a href="https://www.google.com" target="blank">What is Kast?</a>
                             <a href="https://www.google.com">Kast TV</a>
@@ -28,16 +30,28 @@
                         </div>
                     </div>
                     <div class="navDiv">
-                        <input type="checkbox" class="dropdown" id="dropdown2">
+                        <input type="radio" class="dropdown" id="dropdown2" name="nav">
                         <label for="dropdown2"><p class="button">Help &nbsp;<i class="fas fa-chevron-down" style="font-size: 12px;"></i></p></label>
+                        <label for="blank"><p class="offClick">Help &nbsp;<i class="fas fa-chevron-down" style="font-size: 12px;"></i></p></label>
+                        <div id="helpLinks">
+                            <a href="https://www.google.com">Contact Support</a><i class="fas fa-external-link-square-alt" id="contSupArrow"></i>
+                            <a href="https://www.google.com">FAQ's</a><i class="fas fa-external-link-square-alt" id="faqArrow"></i>
+                            <a href="https://www.google.com" target="blank">Get Kast</a>
+                        </div>
                     </div>
                     <div class="navDiv">
-                        <input type="checkbox" class="dropdown" id="dropdown3">
+                        <input type="radio" class="dropdown" id="dropdown3" name="nav">
                         <label for="dropdown3"><p class="button">Community &nbsp;<i class="fas fa-chevron-down" style="font-size: 12px;"></i></p></label>
+                        <label for="blank"><p class="offClick">Community &nbsp;<i class="fas fa-chevron-down" style="font-size: 12px;"></i></p></label>
+                        <div id="communityLinks">
+                            <a href="https://www.google.com">Community Guidelines</a>
+                            <a href="https://www.google.com" target="blank">Founders Hall of Fame</a>
+                        </div>
                     </div>
                     <div class="navDiv">
-                        <button id="premium">Premium</button>
-                        <button id="openKast">OPEN KAST</button>
+                        <a id="premium" href="https://www.google.com" target="blank">Premium</a>
+                        <a id="openKast" href="https://www.google.com" target="blank">OPEN KAST</a>
+                        <div id="buttonBorder"></div>
                     </div>
                 </nav>
             </header>
