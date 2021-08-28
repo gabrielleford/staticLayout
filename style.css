@@ -10,11 +10,11 @@
 
 .headerDiv {
     width: 100%;
-    display: flex;
-    /* position: relative;
+    position: relative;
     top: 0;
-    left: 0; */
+    left: 0;
 }
+
 .topHeader {
     width: 100%;
     position: fixed;
@@ -23,22 +23,26 @@
 
 #kastLogo {
     width: 198px;
-    flex-basis: 50%;
-    /* position: relative;
-    top: -0.2em;
-    left: 0.8em; */
+    position: relative;
+    top: 3.2em;
+    left: 0.8em;
 }
 
 /* #kastLogo:hover {
     width: ;
 } */
 
+
 nav {
-    /* margin-right: 10px; */
-    /* position: relative; */
-    flex-basis: 50%;
-    /* top: -0.8em;
-    right: 10em; */
+    margin-right: 30px;
+    position: relative;
+    float: right;
+    top: 2.5em;
+    right: 10em;
+}
+
+.navDiv {
+    display: inline-block;
 }
 
 .dropdown {
@@ -51,18 +55,60 @@ nav {
     font-size: 16px;
     font-weight: 900;
     padding: 5px;
-    /* margin-right: 32px; */
+    margin-right: 32px;
 }
 
-.navDiv {
-    display: inline-block;
+.button:hover {
+    cursor: pointer;
 }
 
+#dropdown1:checked ~ #aboutLinks {
+    visibility: visible;
+}
 
-#dropdown1:checked + label > p {
+#aboutLinks {
+    background-color: white;
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    padding: 17px 22px 17px 22px;
+    border-radius: 3px;
+    position: absolute;
+    top: 3.5em;
+    right: 16.5em;
     visibility: hidden;
 }
 
+#aboutLinks > a {
+    text-decoration: none;
+    color: #777784;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+#aboutLinks > a:hover {
+    color: #222222;
+    text-decoration: underline;
+}
+
+.fa-external-link-square-alt {
+    color: #8d9eac;
+    font-size: 14px;
+}
+
+#blogArrow {
+    position: absolute;
+    left: 4.5em;
+    bottom: 4.05em;
+}
+
+#pressArrow {
+    position: absolute;
+    right: 1.5em;
+    bottom: 1.7em;
+}
 
 #premium {
     background: none;
@@ -84,7 +130,7 @@ nav {
     font-size: 13px;
     font-weight: 900;
     letter-spacing: 2px;
-    /* margin-left: 50px; */
+    margin-left: 60px;
     position: fixed;
     transition: padding .3s ease-in-out;
 }
